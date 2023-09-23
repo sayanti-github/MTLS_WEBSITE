@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<link href="images/26-32_lions_logo.png" rel="icon">
+	<title>Gallery</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Full Calender CSS -->
+	<link href="css/fullcalendar.css" rel="stylesheet">
+	<!-- Owl Carousel CSS -->
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<!-- Pretty Photo CSS -->
+	<link href="css/prettyPhoto.css" rel="stylesheet">
+	<!-- Bx-Slider StyleSheet CSS -->
+	<link href="css/jquery.bxslider.css" rel="stylesheet"> 
+	<!-- Font Awesome StyleSheet CSS -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!-- Widget CSS -->
+	<link href="css/widget.css" rel="stylesheet">
+	
+	<!-- Typography CSS -->
+	<link href="css/typography.css" rel="stylesheet">
+	<!-- Shortcodes CSS -->
+	<link href="css/shortcodes.css" rel="stylesheet">
+	<!-- Custom Main StyleSheet CSS -->
+	<link href="style.css" rel="stylesheet">
+	<!-- Color CSS -->
+	<link href="css/color.css" rel="stylesheet">
+	<!-- Responsive CSS -->
+	<link href="css/responsive.css" rel="stylesheet">
+	<!-- SELECT MENU -->
+	<link href="css/selectric.css" rel="stylesheet">
+	<!-- SIDE MENU -->
+	<link rel="stylesheet" href="css/jquery.sidr.dark.css">
+    <style>
+		#sub-frame-error {
+        display: none !important;
+}
+.btn {
+    position: relative;
+    height: 20px;
+    box-sizing: border-box;
+    padding: 1px 12px 1px 12px;
+    background-color: #1d9bf0;
+    color: #fff;
+    border-radius: 9999px;
+    font-weight: 500;
+    cursor: pointer;
+	display: none;
+}
+
+	</style>
+</head>
+
+<body>
+	<!--KF KODE WRAPPER WRAP START-->
+    <div class="kode_wrapper">
+    <!-- register Modal -->
+    <div class="modal fade" id="reg-box" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-content">
+            	<!--SIGNIN AS USER START-->
+                <div class="user-box">
+                	<h2>Sign up as a User</h2>
+                    <!--FORM FIELD START-->
+                    <div class="form">
+                        <div class="input-container">
+                            <input type="text" placeholder="Name">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" placeholder="E-mail">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="input-container">
+                            <input type="password" placeholder="Password">
+                            <i class="fa fa-unlock"></i>
+                        </div>
+                        <div class="input-container">
+                            <label>
+                                <span class="radio">
+                                    <input type="checkbox" name="foo" value="1" checked>
+                                    <span class="radio-value" aria-hidden="true"></span>
+                                </span>
+                                <span>Remember me</span>
+                            </label>
+                        </div>
+                        <div class="input-container">
+                            <button class="btn-style">Sign Up</button>
+                        </div>
+                    </div>
+                    <!--FORM FIELD END-->
+                    <!--OPTION START-->
+                    <div class="option">
+                        <h5>Or Using</h5>
+                    </div>
+                    <!--OPTION END-->
+                    <!--OPTION START-->
+                    <div class="social-login">
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i>Google Account</a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i>Facebook Account</a>
+                    </div>
+                    <!--OPTION END-->
+                </div>
+                <!--SIGNIN AS USER END-->
+                <div class="user-box-footer">
+                    Already have an account? <a href="#">Sign In</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- register Modal end-->
+    
+    <!-- SIGNIN MODEL START -->
+    <div class="modal fade" id="signin-box" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-content">
+                <div class="user-box">
+                    <h2>Sign In</h2>
+                    <!--FORM FIELD START-->
+                    <div class="form">
+                        <div class="input-container">
+                            <input type="text" placeholder="E-mail">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="input-container">
+                            <input type="password" placeholder="Password">
+                            <i class="fa fa-unlock"></i>
+                        </div>
+                        <div class="input-container">
+                            <label>
+                                <span class="radio">
+                                    <input type="checkbox" name="foo" value="1" checked>
+                                    <span class="radio-value" aria-hidden="true"></span>
+                                </span>
+                                <span>Remember me</span>
+                            </label>
+                        </div>
+                        <div class="input-container">
+                            <button class="btn-style">Sign In</button>
+                        </div>
+                    </div>
+                    <!--FORM FIELD END-->
+                    <!--OPTION START-->
+                    <div class="option">
+                        <h5>Or Using</h5>
+                    </div>
+                    <!--OPTION END-->
+                    <!--OPTION START-->
+                    <div class="social-login">
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i>Google Account</a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i>Facebook Account</a>
+                    </div>
+                    <!--OPTION END-->
+                
+                </div>
+                <div class="user-box-footer">
+                    <p>Don't have an account?<br><a href="#">Sign up as a User</a></p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- SIGNIN MODEL END -->
+    
+
+	<header id="header_2">
+		<!--kode top bar start-->
+		<div class="top_bar_2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="pull-left">
+							<em class="contct_2"><i class="fa fa-phone"></i> Call Us on  090023 21611</em>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="lng_wrap">
+						
+						</div>
+					
+						<ul class="top_nav">
+							<li><a href="career.html">Career</a></li>
+							<li><a href="info.html">Events</a></li>
+							<li><a href="gallery-masonary-2col.html">Gallery</a></li>
+							<!-- <li><a href="contactus.html">Blogs</a></li> -->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--kode top bar end-->
+	
+		<!--kode navigation start-->
+		<div class="kode_navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="logo_wrap">
+							<a href="index.html"><img src="images\lions_club_logo.png" alt=""
+									style="max-width: 77%; text-align:right;" /></a>
+						</div>
+	
+					</div>
+					<div class="col-md-8">
+						<h1>
+						Mother Teresa Lions School
+						</h1>
+						<p>
+						A service project of		
+						</p>
+						<h2>
+						Lions Club of Durgachak	
+						</h2>
+					</div>
+	
+					<div class="col-md-2" style="text-align:right;">
+						<div class="logo_wrap2">
+							<span><a href="index.html"><img src="images\mother_terrisa_logo.svg" style="max-width: 55%;
+								text-align: left;
+								margin-top: 9px;
+									" alt=""></a>
+								<!-- <h6
+									style=" display: inline-block; text-align:left;margin-top:20px;font-size: 11px;">
+									Indian Socity For Technical Education <br>
+									<a href="files/ISTE INSTITUTIONAL MEMBER.pdf" target="_blank">Institutional
+										Membership ID:2937</a> <br><a href="files/ISTE STUDENTS CHAPTER.pdf"
+										target="_blank">ISTE Student Chapter ID:WB15</a>
+								</h6> -->
+							</span>
+	
+						</div>
+					</div>
+	
+				</div>
+			</div>
+			<div id="mySidepanel" class="sidepanel"> 
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+				<ul>
+					<li><a href="index.html">home</a></li>
+					<li class="active">
+						<button type="button" class="collapsible">About Us <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+						<div class="col-content">
+							<ul>
+								<li><a href="about.html">About mother teresa lions school</a></li>
+								<li><a href="mission-vision.html">Vision and Misson</a></li>
+								<li><a href="leadership.html">Leadership</a></li>
+						
+								<!-- <li><a href="affiliationAccreditation.html">Affiliation and
+										Accreditation</a></li> -->
+							</ul>
+						</div>
+						  
+					</li>
+					<li>
+						
+						<button type="button" class="collapsible">Academics <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+						<div class="col-content">
+							<ul>
+								<li><a href="curriculum.html">Our Curriculum</a></li>
+								<li><a href="evaluation.html">Evaluation Strategy</a></li>
+								<!-- <li><a href="#">Withdrawal & Transfer Certificate</a></li> -->
+								<li><a href="labratory.html">Infrastructure</a></li>
+								<li><a href="faculty.html">Faculty Members</a></li>
+								<!-- <li><a href="labratory.html">Our Labratory</a></li> -->
+							
+								<!-- <li><a href="library.html">Our Library</a></li> -->
+								<li><a href="beyond-classroom.html">Activites</a></li>
+							</ul>
+						</div>
+						  
+					</li>
+					<li>
+						
+						<button type="button" class="collapsible">Admission <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+						<div class="col-content">
+							<ul>
+								<li><a href="admission-policy.html">Admission Policy</a></li>
+								<li><a href="files/lions prospectus.pdf" target="_blank">Prospectus</a></li>
+								<li><a href="courses-eligibility.html">Admission Eligibility Criteria</a></li>
+								<li><a href="fees-structure.html">Fees Structure & Scholarship</a></li>
+								<!-- <li><a href="#">Scholarship</a></li> -->
+								<!-- <li><a href="courses-detail.html">Scholarship</a></li> -->
+								<!-- <li><a href="#">F.A.Q</a></li> -->
+								<!-- <li><a href="info.html">F.A.Q</a></li> -->
+							</ul>
+						</div>
+						  
+					</li>
+					<li>
+						
+						<button type="button" class="collapsible">Lions Corner <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+						<div class="col-content">
+							<ul>
+								<li>
+									<button type="button" class="collapsible">Events <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+									<div class="col-content">
+								<ul>
+									<li><a href="event.html">School Event</a></li>
+									<li><a href="event-social.html">Social Event</a></li>
+								</ul>
+							</div>
+							</li>
+								<li><a href="lions-member.html">Lions Member</a></li>
+								<!-- <li><a href="#">School Facility</a></li> -->
+							</ul>
+						</div>
+					</li>
+					<li>
+						
+						<button type="button" class="collapsible">Services <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+						<div class="col-content">
+							<ul>
+								<!-- <li><a href="transport.html">Transport </a></li> -->
+								<li><a href="health-center.html">Health Center </a></li>
+								<li><a href="water-purifier.html">Water Purifier </a></li>
+							</ul>
+						</div>
+						  
+					</li>
+					<li><a href="contact.html">Contact US</a></li>
+			
+				</ul>
+			
+			
+			  </div>
+			  
+			  <button class="openbtn" onclick="openNav()">☰</button> 
+			  <script>
+				function openNav() {
+				  document.getElementById("mySidepanel").style.width = "100%";
+				}
+				
+				function closeNav() {
+				  document.getElementById("mySidepanel").style.width = "0";
+				}
+				</script>
+			<script>
+				var coll = document.getElementsByClassName("collapsible");
+				var i;
+				
+				for (i = 0; i < coll.length; i++) {
+				  coll[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.display === "block") {
+					  content.style.display = "none";
+					} else {
+					  content.style.display = "block";
+					}
+				  });
+				}
+				</script>
+			<div class="nav_new">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<!-- <div class="logo_wrap">
+								<a href="#"><img src="extra-images/logo_2.png" alt=""></a>
+							</div> -->
+							
+						</div>
+						 
+						<div class="col-md-12">
+							
+							<!--kode nav_2 start-->
+							<div class="nav_2" id="navigation">
+								<ul>
+									<li><a href="index.html">home</a></li>
+									<li><a href="#">About Us</a>
+										<ul>
+											<li><a href="about.html">About mother teresa lions school</a></li>
+											<li><a href="mission-vision.html">Vision and Misson</a></li>
+											<li><a href="leadership.html">Leadership</a></li>
+											<!-- <li><a href="#">Committees</a></li> -->
+											<!-- <li><a href="affiliationAccreditation.html">Affiliation and
+													Accreditation</a></li> -->
+										</ul>
+									</li>
+									<li><a href="#">Academics</a>
+										<ul>
+											<li><a href="curriculum.html">Our Curriculum</a></li>
+											<li><a href="evaluation.html">Evaluation Strategy</a></li>
+											<!-- <li><a href="#">Withdrawal & Transfer Certificate</a></li> -->
+											<li><a href="labratory.html">Infrastructure</a></li>
+											<!-- <li><a href="labratory.html">Our Labratory</a></li> -->
+											<li><a href="faculty.html">Faculty Members</a></li>
+											<!-- <li><a href="library.html">Our Library</a></li> -->
+											<li><a href="beyond-classroom.html">Activites</a></li>
+										</ul>
+									</li>
+									<!-- <li><a href="#">Blog</a>
+										<ul>
+											<li><a href="our-blog.html">our Blog</a></li>
+											<li><a href="blog-2-column.html">blog 2 column</a></li>
+											<li><a href="blog-3-column.html">blog 3 column</a></li>
+											<li><a href="blog-left-sidebar.html">blog with left sidebar</a></li>
+											<li><a href="blog-right-sidebar.html">blog with right sidebar</a></li>
+											<li><a href="blog-detail.html">blog-detail</a></li>
+										</ul>
+									</li> -->
+									<li><a href="#">Admission</a>
+										<ul>
+											<li><a href="admission-policy.html">Admission Policy</a></li>
+											<li><a href="files/lions prospectus.pdf" target="_blank">Prospectus</a></li>
+											<li><a href="courses-eligibility.html">Admission Eligibility Criteria</a></li>
+											<li><a href="fees-structure.html">Fees Structure & Scholarship</a></li>
+											<!-- <li><a href="#">Scholarship</a></li> -->
+											<!-- <li><a href="courses-detail.html">Scholarship</a></li> -->
+											<!-- <li><a href="#">F.A.Q</a></li> -->
+											<!-- <li><a href="info.html">F.A.Q</a></li> -->
+										</ul>
+									</li>
+									<li><a href="#">Lions Corener</a>
+										<ul>
+											<li><a href="#">Events</a>
+											<ul style="    left: 250px;
+											top: 0px;">
+												<li><a href="event.html">School Event</a></li>
+												<li><a href="event-social.html">Social Event</a></li>
+											</ul></li>
+											<li><a href="lions-member.html">Lions Member</a></li>
+											<!-- <li><a href="#">School Facility</a></li> -->
+										</ul>
+									</li>
+									
+									<li><a href="#">Services</a>
+										<ul>
+											<!-- <li><a href="transport.html">Transport </a></li> -->
+											<li><a href="health-center.html">Health Center </a></li>
+											<li><a href="water-purifier.html">Clean Drinking Water Distribution </a></li>
+										</ul>
+									</li>
+									<!-- <li><a href="#">Pages</a>
+										<ul>
+											<li><a href="404.html">404 Page</a></li>
+										</ul>
+									</li> -->
+									<li><a href="contact.html">Contact US</a>
+										<!-- <ul>
+											<li><a href="contactus.html">Contact Us 1</a></li>
+											<li><a href="contactus-2.html">Contact Us 2</a></li>
+										</ul> -->
+									</li>
+									<!-- <li><a id="simple-menu" href="#sidr"><i class="fa fa-bars"></i></a></li> -->
+								</ul>
+							</div>
+							<!--kode nav_2 end-->
+						</div>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+		<!--kode navigation end-->
+		   </header>
+
+        <!--Banner Wrap Start-->
+        <div class="kf_inr_banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                    	<!--KF INR BANNER DES Wrap Start-->
+                        <div class="kf_inr_ban_des">
+                        	<div class="inr_banner_heading">
+								<h3>Our gallery</h3>
+                        	</div>
+                           
+                            <div class="kf_inr_breadcrumb">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="#">gallery</a></li>
+								</ul>
+							</div>
+                        </div>
+                        <!--KF INR BANNER DES Wrap End-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Banner Wrap End-->
+
+    	<!--Content Wrap Start-->
+    	<div class="kf_content_wrap">	
+    		<div class="gallery-masonery_page gallery inner-content-holder">
+    			<div class="container">
+	    			<div class="row">
+	    				<ul id="filterable-item-filter-1">
+							<li><a data-value="all">All</a></li>
+							<li><a data-value="1">School Campus</a></li>
+							<li><a data-value="2">Events</a></li>
+							<li><a data-value="3">Annual sports </a></li>
+						
+							<li><a data-value="4">Annual Function</a></li>
+						</ul>
+
+	    				<div id="filterable-item-holder-1">
+							<div class="filterable-item all 2 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/event13.jpg" alt=""/>
+									<div class="caption"><a href="#">Drawing Compitition</a></div>
+									<a href="images/event13.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 2 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/event12.jpg" alt=""/>
+									<div class="caption"><a href="#">Mother Teresa Birthday Celebration</a></div>
+									<a href="images/event12.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 2 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/event10.jpg" alt=""/>
+									<div class="caption"><a href="#">Independence Day Celebration 2023</a></div>
+									<a href="images/event10.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 2 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/event11.jpg" alt=""/>
+									<div class="caption"><a href="#">Independence Day Celebration 2023</a></div>
+									<a href="images/event11.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 1 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/campus1.jpg" alt=""/>
+									<div class="caption"><a href="#">Playground</a></div>
+									<a href="images/campus1.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 1 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/campus2.jpg" alt=""/>
+									<div class="caption"><a href="#">Classroom</a></div>
+									<a href="images/campus2.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 1 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/campus3.jpg" alt=""/>
+									<div class="caption"><a href="#">Transport Parking Area</a></div>
+									<a href="images/campus3.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 1 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/campus4.jpg" alt=""/>
+									<div class="caption"><a href="#">Stage</a></div>
+									<a href="images/campus4.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 1 col-md-4 col-sm-6 col-xs-12">
+								
+								<div class="edu_masonery_thumb">
+									<img src="images/campus6.jpg" alt=""/>
+									<div class="caption"><a href="#">Playground</a></div>
+									<a href="images/campus6.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>		
+							</div>
+							<div class="filterable-item all 1 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/campus5.jpg" alt=""/>
+									<div class="caption"><a href="#">Front Gate</a></div>
+									<a href="images/campus5.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 1 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/campus7.jpg" alt=""/>
+									<div class="caption"><a href="#">Digital Classroom</a></div>
+									<a href="images/campus7.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>
+							</div>
+							
+							<div class="filterable-item all 2 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/event2.jpg" alt=""/>
+									<div class="caption"><a href="#">Republic Day Celebration</a></div>
+									<a href="images/event2.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 2 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/event3.jpg" alt=""/>
+									<div class="caption"><a href="#">Fancy Dress Compitition</a></div>
+									<a href="images/event3.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 2 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/event4.jpg" alt=""/>
+									<div class="caption"><a href="#">Mother Teresa Death Anniversery</a></div>
+									<a href="images/event4.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 2 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/event5.jpg" alt=""/>
+									<div class="caption"><a href="#">Teacher's Day Celebration</a></div>
+									<a href="images/event5.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 2 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/event7.jpg" alt=""/>
+									<div class="caption"><a href="#">Independence Day Celebration 2022</a></div>
+									<a href="images/event7.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 2 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/event8.jpg" alt=""/>
+									<div class="caption"><a href="#">Shape the Thought Competition</a></div>
+									<a href="images/event8.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+
+							<div class="filterable-item all 2 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/event9.jpg" alt=""/>
+									<div class="caption"><a href="#">Debate Compitition</a></div>
+									<a href="images/event9.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+
+							<div class="filterable-item all 3 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/sports1.jpg" alt=""/>
+									<div class="caption"><a href="#">Annual Sports</a></div>
+									<a href="images/sports1.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 3 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/sports2.jpg" alt=""/>
+									<div class="caption"><a href="#">Annual Sports</a></div>
+									<a href="images/sports2.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 3 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/sports6.jpg" alt=""/>
+									<div class="caption"><a href="#">Annual Sports</a></div>
+									<a href="images/sports6.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 3 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/sports3.jpg" alt=""/>
+									<div class="caption"><a href="#">Annual Sports</a></div>
+									<a href="images/sports3.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 3 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/sports5.jpg" alt=""/>
+									<div class="caption"><a href="#">Annual Sports</a></div>
+									<a href="images/sports5.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 3 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/sports4.jpg" alt=""/>
+									<div class="caption"><a href="#">Annual Sports</a></div>
+									<a href="images/sports4.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 3 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/sports7.jpg" alt=""/>
+									<div class="caption"><a href="#">Annual Sports</a></div>
+									<a href="images/sports7.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 4 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/function1.jpg" alt=""/>
+									<div class="caption"><a href="#">Annual Function</a></div>
+									<a href="images/function1.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 4 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/function2.jpg" alt=""/>
+									<div class="caption"><a href="#">Annual Function</a></div>
+									<a href="images/function2.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 4 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/function3.jpg" alt=""/>
+									<div class="caption"><a href="#">Annual Function</a></div>
+									<a href="images/function3.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 4 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/function4.jpg" alt=""/>
+									<div class="caption"><a href="#">Annual Function</a></div>
+									<a href="images/function4.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 4 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/function5.jpg" alt=""/>
+									<div class="caption"><a href="#">Annual Function</a></div>
+									<a href="images/function5.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+							<div class="filterable-item all 4 col-md-4 col-sm-6 col-xs-12">
+								<div class="edu_masonery_thumb">
+									<img src="images/function6.jpg" alt=""/>
+									<div class="caption"><a href="#">Annual Function</a></div>
+									<a href="images/function6.jpg" rel="prettyPhoto[gallery2]" class="zoom"><i class="fa fa-search"></i></a>
+								</div>	
+							</div>
+						</div>
+					</div>
+    			</div>
+    			<div class="row">
+    				<!-- <div class="loadmore">
+    					<a href="#" class="btn-3">load more</a>
+    				</div> -->
+    			</div>
+    		</div>
+    			
+    	</div>
+        <!--Content Wrap End-->
+			 <!--FOOTER START-->
+			 <footer>
+				<!--EDU2 FOOTER CONTANT WRAP START-->
+				<div class="container">
+					<div class="row">
+						<!--EDU2 FOOTER CONTANT DES START-->
+						<div class="col-md-4">
+							<div class="widget widget-links">
+								<h5>About School</h5>
+								<p class="text-justify" style="color:white; padding-right: 57px;">Mother Teresa Lions School is an initiative from the Lions Club Durgachak. The school was established in 2008 and is located in Durgachak under Purba Medinipur district, West Bengal. The school aims to provide quality education to students. </p>
+							 
+							</div>
+							<button class="ft-btn">
+							  <a href="https://www.facebook.com/people/Mother-Teresa-Lions-School/100054322129728/?paipv=0&eav=AfZsQC3dIDDpcq797KcAjTyr9bmLfqt6UC2pium5RdbgoH59imfDM1dnaPF1bBmbFtE&_rdr" target="_blank"
+							  style=" font-weight: 700;font-size: 17px;color: #041e47;font-family: arial;"><span>facebook</span></a>
+							</button>	
+							
+						</div>
+						<!--EDU2 FOOTER CONTANT DES END-->
+		
+						<!--EDU2 FOOTER CONTANT DES START-->
+						<div class="col-md-4">
+							<div class="widget widget-links">
+								<h5>Quick Links</h5>
+								<ul>
+									<li><a href="curriculum.html">Curriculum</a></li>
+									<li><a href="admission-policy.html">Admission Eligibility Criteria</a></li>
+									<li><a href="fees-structure.html">Fees Structure & Scholarship</a></li>
+									<li><a href="event-social.html">Social Event</a></li>
+									<li><a href="health-center.html">Health Center</a></li>
+									<li><a href="water-purifier.html">Clean Drinking Water Distribution</a></li>
+								</ul>
+								
+							</div>
+						</div>
+						<!--EDU2 FOOTER CONTANT DES END-->
+						<!--EDU2 FOOTER CONTANT DES START-->
+						<div class="col-md-4">
+							<div class="widget widget-contact">
+								<h5>Contact</h5>
+								<ul>
+									<li><i class="fa fa-home" style="font-size: 18px;"></i><p style="display: inline;padding-left: 10px;">Durgachak lions club Basudevpur, Durgachak, </p><p style="padding-left: 28px;margin-bottom: 0;">Khanjanchak Haldia, West Bengal 721602</p>
+									</li>
+									<li>
+										<i class="fa fa-phone" style="font-size: 18px;padding-right: 10px;"></i><a href="tel:090023 21611"> 090023 21611</a>
+										<br>
+										<i class="fa fa-phone" style="font-size: 18px;padding-right: 10px;"></i><a href="tel: 81012 98855"> 81012 98855 (president's Phone No)</a>
+									</li>
+								
+									<li><i class="fa fa-envelope-o" style="font-size: 18px;padding-right: 10px;"></i><a href="mailto:motherteresalionsschool@gmail.com">motherteresalionsschool@gmail.com</a></li>
+								</ul>
+							</div>
+							<div class="widget widget-contact" style="padding-top: 16px;">
+								<b style="padding-top:10px;color:white;">Opening Hours</b>
+								<ul>
+									<li><i class="fa fa-clock-o" aria-hidden="true" style="font-size: 21px;padding-right: 11px;"></i>8 am to 1:30 pm (Mon - Friday)</li>
+								</ul>
+		
+							</div>
+						</div>
+						<!--EDU2 FOOTER CONTANT DES END-->
+					</div>
+				</div>
+			</footer>
+			<!--FOOTER END-->
+		<!--COPYRIGHTS START-->
+		<div class="edu2_copyright_wrap">
+			<div class="container">
+				<div class="row">
+					<!-- <div class="col-md-3">
+						<div class="edu2_ft_logo_wrap">
+							<a href="#"><img src="extra-images/ft_logo.png" alt="" /></a>
+						</div>
+					</div> -->
+
+					<div class="col-md-12">
+						<div class="copyright_des">
+							<span>&copy; All Rights reserved. Powered By <a href="https://sysbean.com/" target="_blank">Sysbean</a></span>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<!-- <ul class="cards_wrap">
+							<li><a href="#"><img src="extra-images/visacard.png" alt="" /></a></li>
+							<li><a href="#"><img src="extra-images/mastercard.png" alt="" /></a></li>
+							<li><a href="#"><img src="extra-images/americancard.png" alt="" /></a></li>
+							<li><a href="#"><img src="extra-images/card.png" alt="" /></a></li>
+							<li><a href="#"><img src="extra-images/descoverycard.png" alt="" /></a></li>
+						</ul> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--COPYRIGHTS START-->
+    </div>
+    <!--KF KODE WRAPPER WRAP END-->
+
+    
+
+	<!--Bootstrap core JavaScript-->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--Bx-Slider JavaScript-->
+	<script src="js/jquery.bxslider.min.js"></script>
+	<!--Owl Carousel JavaScript-->
+	<script src="js/owl.carousel.min.js"></script>
+	<!--Pretty Photo JavaScript-->
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<!--Full Calender JavaScript-->
+	<script src="js/moment.min.js"></script>
+	<script src="js/fullcalendar.min.js"></script>
+	<script src="js/jquery.downCount.js"></script>
+	<!--Image Filterable JavaScript-->
+	<script src="js/jquery-filterable.js"></script>
+	<!--Accordian JavaScript-->
+	<script src="js/jquery.accordion.js"></script>
+	<!--Number Count (Waypoints) JavaScript-->
+	<script src="js/waypoints-min.js"></script>
+	<!--v ticker-->
+	<script src="js/jquery.vticker.min.js"></script>
+	<!--select menu-->
+	<script src="js/jquery.selectric.min.js"></script>
+	<!--Side Menu-->
+	<script src="js/jquery.sidr.min.js"></script>
+	<!--Custom JavaScript-->
+	<script src="js/custom.js"></script>
+
+    
+</body>
+</html>

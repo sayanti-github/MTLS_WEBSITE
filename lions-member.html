@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="images/26-32_lions_logo.png" rel="icon">
+	<title>Lions Member</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Full Calender CSS -->
+	<link href="css/fullcalendar.css" rel="stylesheet">
+	<!-- Owl Carousel CSS -->
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<!-- Pretty Photo CSS -->
+	<link href="css/prettyPhoto.css" rel="stylesheet">
+	<!-- Bx-Slider StyleSheet CSS -->
+	<link href="css/jquery.bxslider.css" rel="stylesheet">
+	<!-- Font Awesome StyleSheet CSS -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="svg/style.css" rel="stylesheet">
+	<!-- Widget CSS -->
+	<link href="css/widget.css" rel="stylesheet">
+	<!-- Typography CSS -->
+	<link href="css/typography.css" rel="stylesheet">
+	<!-- Shortcodes CSS -->
+	<link href="css/shortcodes.css" rel="stylesheet">
+	<!-- Custom Main StyleSheet CSS -->
+	<link href="style.css" rel="stylesheet">
+	<!-- Color CSS -->
+	<link href="css/color.css" rel="stylesheet">
+	<!-- Responsive CSS -->
+	<link href="css/responsive.css" rel="stylesheet">
+	<!-- SELECT MENU -->
+	<link href="css/selectric.css" rel="stylesheet">
+	<!-- SIDE MENU -->
+	<link rel="stylesheet" href="css/jquery.sidr.dark.css">
+	<style>
+		tr:nth-child(even){background-color: #f2f2f2;}
+	
+		/* tr:hover {background-color: #212121;} */
+		.inner-most {
+					position: relative;
+					overflow: hidden;
+					background: #edb80017;
+					border: 1px solid #edb8002b;
+					border-radius: 5px;
+				}
+				.inner-most:hover{
+					box-shadow: 0px 5px 10px 0px #00000024;
+					margin-bottom: 20px;
+					transition: .5s;
+				}
+				
+				.inner-most .image-box {
+					position: relative;
+					padding: 10px 10px;
+				}
+				.inner-most .lower-part {
+					position: relative;
+					padding-top: 20px;
+					margin-top:  224px;
+				}
+				/* .inner-most .lower-part .left-curve {
+					position: absolute;
+					left: 35%;
+					top: 36px;
+					width: 20px;
+					height: 10px;
+					background: #ffffff;
+					border-top: 10px solid transparent;
+					-webkit-transform: rotate(-18deg);
+					-ms-transform: rotate(-18deg);
+					-o-transform: rotate(-18deg);
+					-moz-transform: rotate(-18deg);
+					transform: rotate(-18deg);
+					transition: all 500ms ease;
+					-webkit-transition: all 500ms ease;
+					-ms-transition: all 500ms ease;
+					-o-transition: all 500ms ease;
+					-moz-transition: all 500ms ease;
+				}
+				.inner-most .lower-part .right-curve {
+					position: absolute;
+					right: 0px;
+					top: 36px;
+					width: 20px;
+					height: 10px;
+					background: #ffffff;
+					border-top: 10px solid transparent;
+					-webkit-transform: rotate(18deg);
+					-ms-transform: rotate(18deg);
+					-o-transform: rotate(1d8eg);
+					-moz-transform: rotate(18deg);
+					transform: rotate(18deg);
+					transition: all 500ms ease;
+					-webkit-transition: all 500ms ease;
+					-ms-transition: all 500ms ease;
+					-o-transition: all 500ms ease;
+					-moz-transition: all 500ms ease;
+				} */
+				.inner-most .lower-part .content {
+					position: relative;
+					z-index: 1;
+					padding: 20px;
+					text-align: center;
+				}
+				
+				/* .inner-most .lower-part:before{
+					content: '';
+					width: 0;
+					height: 0;
+					border-left: 50px solid transparent;
+					border-right: 50px solid transparent;
+					border-bottom: 51px solid #fff9e7;
+					position: absolute;
+					top: 49px;
+					left: 132px;
+				} */
+		</style>
+</head>
+
+<body>
+	<!--KF KODE WRAPPER WRAP START-->
+	<div class="kode_wrapper">
+		<!-- register Modal -->
+		<div class="modal fade" id="reg-box" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+						aria-hidden="true">&times;</span></button>
+				<div class="modal-content">
+					<!--SIGNIN AS USER START-->
+					<div class="user-box">
+						<h2>Sign up as a User</h2>
+						<!--FORM FIELD START-->
+						<div class="form">
+							<div class="input-container">
+								<input type="text" placeholder="Name">
+								<i class="fa fa-user"></i>
+							</div>
+							<div class="input-container">
+								<input type="text" placeholder="E-mail">
+								<i class="fa fa-envelope-o"></i>
+							</div>
+							<div class="input-container">
+								<input type="password" placeholder="Password">
+								<i class="fa fa-unlock"></i>
+							</div>
+							<div class="input-container">
+								<label>
+									<span class="radio">
+										<input type="checkbox" name="foo" value="1" checked>
+										<span class="radio-value" aria-hidden="true"></span>
+									</span>
+									<span>Remember me</span>
+								</label>
+							</div>
+							<div class="input-container">
+								<button class="btn-style">Sign Up</button>
+							</div>
+						</div>
+						<!--FORM FIELD END-->
+						<!--OPTION START-->
+						<div class="option">
+							<h5>Or Using</h5>
+						</div>
+						<!--OPTION END-->
+						<!--OPTION START-->
+						<div class="social-login">
+							<a href="#" class="google"><i class="fa fa-google-plus"></i>Google Account</a>
+							<a href="#" class="facebook"><i class="fa fa-facebook"></i>Facebook Account</a>
+						</div>
+						<!--OPTION END-->
+					</div>
+					<!--SIGNIN AS USER END-->
+					<div class="user-box-footer">
+						Already have an account? <a href="#">Sign In</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!-- register Modal end-->
+
+		<!-- SIGNIN MODEL START -->
+		<div class="modal fade" id="signin-box" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+						aria-hidden="true">&times;</span></button>
+				<div class="modal-content">
+					<div class="user-box">
+						<h2>Sign In</h2>
+						<!--FORM FIELD START-->
+						<div class="form">
+							<div class="input-container">
+								<input type="text" placeholder="E-mail">
+								<i class="fa fa-envelope-o"></i>
+							</div>
+							<div class="input-container">
+								<input type="password" placeholder="Password">
+								<i class="fa fa-unlock"></i>
+							</div>
+							<div class="input-container">
+								<label>
+									<span class="radio">
+										<input type="checkbox" name="foo" value="1" checked>
+										<span class="radio-value" aria-hidden="true"></span>
+									</span>
+									<span>Remember me</span>
+								</label>
+							</div>
+							<div class="input-container">
+								<button class="btn-style">Sign In</button>
+							</div>
+						</div>
+						<!--FORM FIELD END-->
+						<!--OPTION START-->
+						<div class="option">
+							<h5>Or Using</h5>
+						</div>
+						<!--OPTION END-->
+						<!--OPTION START-->
+						<div class="social-login">
+							<a href="#" class="google"><i class="fa fa-google-plus"></i>Google Account</a>
+							<a href="#" class="facebook"><i class="fa fa-facebook"></i>Facebook Account</a>
+						</div>
+						<!--OPTION END-->
+
+					</div>
+					<div class="user-box-footer">
+						<p>Don't have an account?<br><a href="#">Sign up as a User</a></p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!-- SIGNIN MODEL END -->
+
+		<header id="header_2">
+			<!--kode top bar start-->
+			<div class="top_bar_2">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="pull-left">
+								<em class="contct_2"><i class="fa fa-phone"></i> Call Us on  090023 21611</em>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<div class="lng_wrap">
+							
+							</div>
+						
+							<ul class="top_nav">
+								<li><a href="career.html">Career</a></li>
+								<li><a href="info.html">Events</a></li>
+								<li><a href="gallery-masonary-2col.html">Gallery</a></li>
+								<!-- <li><a href="contactus.html">Blogs</a></li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--kode top bar end-->
+		
+			<!--kode navigation start-->
+			<div class="kode_navigation">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<div class="logo_wrap">
+								<a href="index.html"><img src="images\lions_club_logo.png" alt=""
+										style="max-width: 77%; text-align:right;" /></a>
+							</div>
+		
+						</div>
+						<div class="col-md-8">
+							<h1>
+							Mother Teresa Lions School
+							</h1>
+							<p>
+							A service project of		
+							</p>
+							<h2>
+							Lions Club of Durgachak	
+							</h2>
+						</div>
+		
+						<div class="col-md-2" style="text-align:right;">
+							<div class="logo_wrap2">
+								<span><a href="index.html"><img src="images\mother_terrisa_logo.svg" style="max-width: 55%;
+									text-align: left;
+									margin-top: 9px;
+										" alt=""></a>
+									<!-- <h6
+										style=" display: inline-block; text-align:left;margin-top:20px;font-size: 11px;">
+										Indian Socity For Technical Education <br>
+										<a href="files/ISTE INSTITUTIONAL MEMBER.pdf" target="_blank">Institutional
+											Membership ID:2937</a> <br><a href="files/ISTE STUDENTS CHAPTER.pdf"
+											target="_blank">ISTE Student Chapter ID:WB15</a>
+									</h6> -->
+								</span>
+		
+							</div>
+						</div>
+		
+					</div>
+				</div>
+				<div id="mySidepanel" class="sidepanel"> 
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+					<ul>
+						<li><a href="index.html">home</a></li>
+						<li class="active">
+							<button type="button" class="collapsible">About Us <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+							<div class="col-content">
+								<ul>
+									<li><a href="about.html">About mother teresa lions school</a></li>
+									<li><a href="mission-vision.html">Vision and Misson</a></li>
+									<li><a href="leadership.html">Leadership</a></li>
+							
+									<!-- <li><a href="affiliationAccreditation.html">Affiliation and
+											Accreditation</a></li> -->
+								</ul>
+							</div>
+							  
+						</li>
+						<li>
+							
+							<button type="button" class="collapsible">Academics <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+							<div class="col-content">
+								<ul>
+									<li><a href="curriculum.html">Our Curriculum</a></li>
+									<li><a href="evaluation.html">Evaluation Strategy</a></li>
+									<!-- <li><a href="#">Withdrawal & Transfer Certificate</a></li> -->
+									<li><a href="labratory.html">Infrastructure</a></li>
+									<li><a href="faculty.html">Faculty Members</a></li>
+									<!-- <li><a href="labratory.html">Our Labratory</a></li> -->
+								
+									<!-- <li><a href="library.html">Our Library</a></li> -->
+									<li><a href="beyond-classroom.html">Activites</a></li>
+								</ul>
+							</div>
+							  
+						</li>
+						<li>
+							
+							<button type="button" class="collapsible">Admission <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+							<div class="col-content">
+								<ul>
+									<li><a href="admission-policy.html">Admission Policy</a></li>
+									<li><a href="files/lions prospectus.pdf" target="_blank">Prospectus</a></li>
+									<li><a href="courses-eligibility.html">Admission Eligibility Criteria</a></li>
+									<li><a href="fees-structure.html">Fees Structure & Scholarship</a></li>
+									<!-- <li><a href="#">Scholarship</a></li> -->
+									<!-- <li><a href="courses-detail.html">Scholarship</a></li> -->
+									<!-- <li><a href="#">F.A.Q</a></li> -->
+									<!-- <li><a href="info.html">F.A.Q</a></li> -->
+								</ul>
+							</div>
+							  
+						</li>
+						<li>
+							
+							<button type="button" class="collapsible">Lions Corner <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+							<div class="col-content">
+								<ul>
+									<li>
+										<button type="button" class="collapsible">Events <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+										<div class="col-content">
+									<ul>
+										<li><a href="event.html">School Event</a></li>
+										<li><a href="event-social.html">Social Event</a></li>
+									</ul>
+								</div>
+								</li>
+									<li><a href="lions-member.html">Lions Member</a></li>
+									<!-- <li><a href="#">School Facility</a></li> -->
+								</ul>
+							</div>
+						</li>
+						<li>
+							
+							<button type="button" class="collapsible">Services <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+							<div class="col-content">
+								<ul>
+									<!-- <li><a href="transport.html">Transport </a></li> -->
+									<li><a href="health-center.html">Health Center </a></li>
+									<li><a href="water-purifier.html">Water Purifier </a></li>
+								</ul>
+							</div>
+							  
+						</li>
+						<li><a href="contact.html">Contact US</a></li>
+				
+					</ul>
+				
+				
+				  </div>
+				  
+				  <button class="openbtn" onclick="openNav()">☰</button> 
+				  <script>
+					function openNav() {
+					  document.getElementById("mySidepanel").style.width = "100%";
+					}
+					
+					function closeNav() {
+					  document.getElementById("mySidepanel").style.width = "0";
+					}
+					</script>
+				<script>
+					var coll = document.getElementsByClassName("collapsible");
+					var i;
+					
+					for (i = 0; i < coll.length; i++) {
+					  coll[i].addEventListener("click", function() {
+						this.classList.toggle("active");
+						var content = this.nextElementSibling;
+						if (content.style.display === "block") {
+						  content.style.display = "none";
+						} else {
+						  content.style.display = "block";
+						}
+					  });
+					}
+					</script>
+				<div class="nav_new">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-2">
+								<!-- <div class="logo_wrap">
+									<a href="#"><img src="extra-images/logo_2.png" alt=""></a>
+								</div> -->
+								
+							</div>
+							 
+							<div class="col-md-12">
+								
+								<!--kode nav_2 start-->
+								<div class="nav_2" id="navigation">
+									<ul>
+										<li><a href="index.html">home</a></li>
+										<li><a href="#">About Us</a>
+											<ul>
+												<li><a href="about.html">About mother teresa lions school</a></li>
+												<li><a href="mission-vision.html">Vision and Misson</a></li>
+												<li><a href="leadership.html">Leadership</a></li>
+												<!-- <li><a href="#">Committees</a></li> -->
+												<!-- <li><a href="affiliationAccreditation.html">Affiliation and
+														Accreditation</a></li> -->
+											</ul>
+										</li>
+										<li><a href="#">Academics</a>
+											<ul>
+												<li><a href="curriculum.html">Our Curriculum</a></li>
+												<li><a href="evaluation.html">Evaluation Strategy</a></li>
+												<!-- <li><a href="#">Withdrawal & Transfer Certificate</a></li> -->
+												<li><a href="labratory.html">Infrastructure</a></li>
+												<!-- <li><a href="labratory.html">Our Labratory</a></li> -->
+												<li><a href="faculty.html">Faculty Members</a></li>
+												<!-- <li><a href="library.html">Our Library</a></li> -->
+												<li><a href="beyond-classroom.html">Activites</a></li>
+											</ul>
+										</li>
+										<!-- <li><a href="#">Blog</a>
+											<ul>
+												<li><a href="our-blog.html">our Blog</a></li>
+												<li><a href="blog-2-column.html">blog 2 column</a></li>
+												<li><a href="blog-3-column.html">blog 3 column</a></li>
+												<li><a href="blog-left-sidebar.html">blog with left sidebar</a></li>
+												<li><a href="blog-right-sidebar.html">blog with right sidebar</a></li>
+												<li><a href="blog-detail.html">blog-detail</a></li>
+											</ul>
+										</li> -->
+										<li><a href="#">Admission</a>
+											<ul>
+												<li><a href="admission-policy.html">Admission Policy</a></li>
+												<li><a href="files/lions prospectus.pdf" target="_blank">Prospectus</a></li>
+												<li><a href="courses-eligibility.html">Admission Eligibility Criteria</a></li>
+												<li><a href="fees-structure.html">Fees Structure & Scholarship</a></li>
+												<!-- <li><a href="#">Scholarship</a></li> -->
+												<!-- <li><a href="courses-detail.html">Scholarship</a></li> -->
+												<!-- <li><a href="#">F.A.Q</a></li> -->
+												<!-- <li><a href="info.html">F.A.Q</a></li> -->
+											</ul>
+										</li>
+										<li><a href="#">Lions Corener</a>
+											<ul>
+												<li><a href="#">Events</a>
+												<ul style="    left: 250px;
+												top: 0px;">
+													<li><a href="event.html">School Event</a></li>
+													<li><a href="event-social.html">Social Event</a></li>
+												</ul></li>
+												<li><a href="lions-member.html">Lions Member</a></li>
+												<!-- <li><a href="#">School Facility</a></li> -->
+											</ul>
+										</li>
+										
+										<li><a href="#">Services</a>
+											<ul>
+												<!-- <li><a href="transport.html">Transport </a></li> -->
+												<li><a href="health-center.html">Health Center </a></li>
+												<li><a href="water-purifier.html">Clean Drinking Water Distribution </a></li>
+											</ul>
+										</li>
+										<!-- <li><a href="#">Pages</a>
+											<ul>
+												<li><a href="404.html">404 Page</a></li>
+											</ul>
+										</li> -->
+										<li><a href="contact.html">Contact US</a>
+											<!-- <ul>
+												<li><a href="contactus.html">Contact Us 1</a></li>
+												<li><a href="contactus-2.html">Contact Us 2</a></li>
+											</ul> -->
+										</li>
+										<!-- <li><a id="simple-menu" href="#sidr"><i class="fa fa-bars"></i></a></li> -->
+									</ul>
+								</div>
+								<!--kode nav_2 end-->
+							</div>
+						</div>
+					</div>
+				</div>
+		
+			</div>
+			<!--kode navigation end-->
+			   </header>
+		       <!--Banner Wrap Start-->
+			   <div class="kf_inr_banner">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<!--KF INR BANNER DES Wrap Start-->
+							<div class="kf_inr_ban_des">
+								<div class="inr_banner_heading">
+									<h3>LIONS MEMBER</h3>
+								</div>
+							   
+								<div class="kf_inr_breadcrumb">
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="#">Lions Corner</a></li>
+										<li><a href="#">Lions Member</a></li>
+									</ul>
+								</div>
+							</div>
+							<!--KF INR BANNER DES Wrap End-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Banner Wrap End-->
+			<div class="kf_content_wrap" style="background: #edb80017;">
+				<section class="event_list_page">
+					<div class="kf_edu2_heading2">
+						<h3 class="center">Lions Member</h3>
+					</div>
+					<div class="container">
+						<div class="row">
+						
+							<div class="col-md-4" style="margin-top:10px;">
+								<div class="inner-most">
+									<figure class="image-box"><a href=""><img  src="images/presedent.jpg" class="img-responsive wp-post-image" alt="" ></a></figure>
+									<div class="lower-part">
+										<div class="content">
+											<div class="kf_event_list_des">
+												<h4 style="color: #edb800;">President</h4>
+												<h6>Tapas Kumar Maity ,MJF</h6>
+												<b><a href="mailto:tapaskumarmaity71@gmail.com">tapaskumarmaity71@gmail.com</a></b>
+												<b><a href="tel:9932450021">9932450021</a></b>
+												<!-- <ul class="kf_event_list_links">
+													<li><i class="fa fa-user"></i><a href="#">John Doe</a></li>
+													<li><i class="fa fa-calendar"></i><a href="#">Saturday 10:00 AM</a></li>
+												</ul> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4" style="margin-top:10px;">
+								<div class="inner-most">
+									<figure class="image-box"><a href=""><img  src="images/sectratory.jpg" class="img-responsive wp-post-image" alt="" ></a></figure>
+									<div class="lower-part">
+										<div class="content">
+											<div class="kf_event_list_des">
+												<h4 style="color: #edb800;">Secretary</h4>
+												<h6>Anup Kumar Maiti ,MJF</h6>
+												<b><a href="mailto:anupkumarmaiti0@gmail.com">anupkumarmaiti0@gmail.com</a></b>
+												<br>
+												<b><a href="tel:9434020768">9434020768</a></b>
+												<!-- <ul class="kf_event_list_links">
+													<li><i class="fa fa-user"></i><a href="#">John Doe</a></li>
+													<li><i class="fa fa-calendar"></i><a href="#">Saturday 10:00 AM</a></li>
+												</ul> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4" style="margin-top:10px;">
+								<div class="inner-most">
+									<figure class="image-box"><a href=""><img  src="images/treasurer.jpg" class="img-responsive wp-post-image" alt="" ></a></figure>
+									<div class="lower-part">
+										<div class="content">
+											<div class="kf_event_list_des">
+												<h4 style="color: #edb800;">Treasurer</h4>
+												<h6>Navin Jain</h6>
+												<b><a href="mailto:jainexindia9@gmail.com">jainexindia9@gmail.com</a></b>
+												<br>
+												<b><a href="tel:9800124004">9800124004</a></b>
+												<!-- <ul class="kf_event_list_links">
+													<li><i class="fa fa-user"></i><a href="#">John Doe</a></li>
+													<li><i class="fa fa-calendar"></i><a href="#">Saturday 10:00 AM</a></li>
+												</ul> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+					</div>
+					
+				</section>	
+				<!--ABOUT UNIVERSITY START-->
+				<section>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="abt_univ_wrap">
+									<!--EVENT CONVOCATION  Wrap START-->
+									<div class="kf_convocation_wrap" style="overflow: auto;">
+										<!-- <h4><span>COMMITTEES</span></h4> -->
+
+										<table class="table table-bordered" style="width: 93%;
+										margin: auto;">
+											<thead>
+													<tr style="background: #0c336f;color: white;">
+														<th scope="col">Sl.No.</th>
+														<th scope="col">Name</th>
+														<th scope="col">Email Id</th>
+														<th scope="col">Phone</th>
+													</tr>
+												</thead>
+												<tbody>
+										        <tr>
+													<td>1</td>
+											         <td>Swarupananda Paladhi, MJF IPP</td>
+											         <td><a href="mailto:swaruppaladhi@gmail.com">swaruppaladhi@gmail.com</a></td>
+											         <td><a href="tel:9474001084">9474001084</a></td>
+										        </tr>
+                                                <tr>
+													<td>2</td>
+													<td>Suvankar Das,MJF (1 st VP)</td>
+													<td><a href="mailto:maakalienterp@gmail.com">maakalienterp@gmail.com</a></td>
+													<td><a href="tel:993303370">993303370</a></td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>Tapasi Banerjee, MJF</td>
+													<td><a href="mailto:tapasibanerjee01@gmail.com">tapasibanerjee01@gmail.com</a></td>
+													<td><a href="tel:9434940525">9434940525</a></td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>Uma Banerjee</td>
+													<td><a href="mailto:umabanerjee48@gmail.com">umabanerjee48@gmail.com</a></td>
+													<td><a href="tel:"></a></td>
+												</tr>
+												<tr>
+													<td>5</td>
+													<td>Debjani Bera</td>
+													<td><a href="mailto:coolgirldebjani@gmail.com">coolgirldebjani@gmail.com</a></td>
+													<td><a href="tel:7586967816">7586967816</a></td>
+												</tr>
+												<tr>
+													<td>6</td>
+													<td>Dipali Bera</td>
+													<td><a href="mailto:"></a></td>
+													<td><a href="tel:9434015481">9434015481</a></td>
+												</tr>
+												<tr>
+													<td>7</td>
+													<td>Gangadhar Bera , MJF</td>
+													<td><a href="mailto:gangadharbera@gmail.com">gangadharbera@gmail.com</a></td>
+													<td><a href="tel:9434015481">9434015481</a></td>
+												</tr>
+												<tr>
+													<td>8</td>
+													<td>Narayan Ch. Bera</td>
+													<td><a href="mailto:ncbera@gmail.com">ncbera@gmail.com</a></td>
+													<td><a href="tel:94340 66637 ">94340 66637</a></td>
+												</tr>
+												<tr>
+													<td>9</td>
+													<td>Pratima Bera</td>
+													<td><a href="mailto:ncbera@gmail.com">ncbera@gmail.com</a></td>
+													<td><a href="tel:94340 66637">94340 66637 </a></td>
+												</tr>
+												<tr>
+													<td>10</td>
+													<td>Radhrani Bera</td>
+													<td><a href="mailto:sasadhar9434800837@gmail.com">sasadhar9434800837@gmail.com</a></td>
+												    <td><a href="tel:9434800837">9434800837</a></td>
+												</tr>
+												<tr>
+													<td>11</td>
+													<td>Sasadhar Bera , MJF</td>
+													<td><a href="mailto:sasadhar9434800837@gmail.com">sasadhar9434800837@gmail.com</a></td>
+													<td><a href="tel:9434800837">9434800837</a></td>
+												</tr>
+												<tr>
+													<td>12</td>
+													<td>Asish Bhattacharyya ,MJF</td>
+													<td><a href="mailto:Itcabhattacharyya@gmail.com">Itcabhattacharyya@gmail.com</a></td>
+													<td><a href="tel:92333 05612">92333 05612</a></td>
+												</tr>
+												<tr>
+													<td>13</td>
+													<td>Barnali Bhattacharyya, MJF</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>14</td>
+													<td>Raja Bhattacharyya</td>
+													<td><a href="mailto:rajaxyz869@gmail.com">rajaxyz869@gmail.com</a></td>
+													<td><a href="tel:797534408">797534408</a></td>
+												</tr>
+												<tr>
+													<td>15</td>
+													<td>Amina Bibi, MJF</td>
+													<td><a href="mailto:"></a></td>
+													<td><a href="tel:9434005402,">9434005402</a></td>
+												</tr>
+												<tr>
+													<td>16</td>
+													<td>Sanjoy Chakraborty</td>
+													<td><a href="mailto:sanjoy251@rediffmail.com">sanjoy251@rediffmail.com</a></td>
+													<td><a href="tel:9547164301">9547164301</a></td>
+												</tr>
+												<tr>
+													<td>17</td>
+													<td>Sanjay Kr. Chakrabarty</td>
+													<td><a href="mailto:sanjoy251@rediffmail.com">sanjoy251@rediffmail.com</a></td>
+													<td><a href="tel:9434031407">9434031407</a></td>
+												</tr>
+												<tr>
+													<td>18</td>
+													<td>Snehasis Chakraborty</td>
+													<td><a href="mailto:"></a></td>
+													<td><a href="tel:94340 29933">94340 29933</a></td>
+												</tr>
+												<tr>
+													<td>19</td>
+													<td>Sujata Chakraborty</td>
+													<td><a href="mailto:sanjoy251@rediffmail.com">sanjoy251@rediffmail.com</a></td>
+													<td><a href="tel:9434029933">9434029933</a></td>
+												</tr>
+												<tr>
+													<td>20</td>
+													<td>Tulika Chakraborty</td>
+													<td><a href="mailto:"></a></td>
+													<td><a href="tel:9434029933">9434029933</a></td>
+												</tr>
+												<tr>
+													<td>21</td>
+													<td>Prem Singh Chauhan , MJF</td>
+													<td><a href="mailto:pschauhan4321@gmail.com">pschauhan4321@gmail.com</a></td>
+													<td><a href="tel:9434029933">9434029933</a></td>
+												</tr>
+												<tr>
+													<td>22</td>
+													<td>Vandana Chauhan, MJF</td>
+													<td><a href="mailto:pschauhan4321@gmail.com">pschauhan4321@gmail.com</a></td>
+													<td><a href="tel:9434993616">9434993616</a></td>
+												</tr>
+												<tr>
+													<td>23</td>
+													<td>Sumit Dakshit, MJF</td>
+													<td><a href="mailto:sumitdakshit@gmail.com">sumitdakshit@gmail.com</a></td>
+													<td><a href="tel:9434417930">9434417930</a></td>
+												</tr>
+												<tr>
+													<td>24</td>
+													<td>Prabhat Kumar Das, MJF</td>
+													<td><a href="mailto:dprabhat39@gmail.com">dprabhat39@gmail.com</a></td>
+													<td><a href="tel:943424352">9434243520</a></td>
+												</tr>
+												<tr>
+													<td>25</td>
+													<td>Sonali Das</td>
+													<td><a href="mailto:maakalienterp@gmail.com">maakalienterp@gmail.com</a></td>
+													<td><a href="tel:993303370">9933303370</a></td>
+												</tr>
+												<tr>
+													<td>26</td>
+													<td>Swarup Kr. Das</td>
+													<td><a href="mailto:dswarup19@gmail.com">dswarup19@gmail.com</a></td>
+													<td><a href="tel:9153503809">9153503809</a></td>
+												</tr>
+												<tr>
+													<td>27</td>
+													<td>Alok Kr. Hazra , MJF</td>
+													<td><a href="mailto:alokhazra1234@gmail.com">alokhazra1234@gmail.com</a></td>
+													<td><a href="tel:9800695034">9800695034</a></td>
+												</tr>
+												<tr>
+													<td>28</td>
+													<td>Dilip Kr. Hazra, MJF</td>
+													<td><a href="mailto:dilip.hazra9@gmail.com">dilip.hazra9@gmail.com</a></td>
+													<td><a href="tel:9434129032">9434129032</a></td>
+												</tr>
+												<tr>
+													<td>29</td>
+													<td>Lopamudra Hazra</td>
+													<td><a href="mailto:alokhazra1234@gmail.com">alokhazra1234@gmail.com</a></td>
+													<td><a href="tel:9800695034">9800695034</a></td>
+												</tr>
+												<tr>
+													<td>30</td>
+													<td>Madurima Hazra</td>
+													<td><a href="mailto:alokhazra1234@gmail.com">alokhazra1234@gmail.com</a></td>
+													<td><a href="tel:9800695034">9800695034</a></td>
+												</tr>
+												<tr>
+													<td>31</td>
+													<td>Pratima Hazra, MJF</td>
+													<td><a href="mailto:"></a></td>
+													<td><a href="tel:9800695034">9800695034</a></td>
+												</tr>
+												<tr>
+													<td>32</td>
+													<td>Sourav Jain</td>
+													<td><a href="mailto:sauravborar@yahoo.com">sauravborar@yahoo.com</a></td>
+													<td><a href="tel:9830303485">9830303485</a></td>
+												</tr>
+												<tr>
+													<td>33</td>
+													<td>Sital Jain</td>
+													<td><a href="mailto:jainexindia9@gmail.com">jainexindia9@gmail.com</a></td>
+													<td><a href="tel:9800124004">9800124004</a></td>
+												</tr>
+												<tr>
+													<td>34</td>
+													<td>Sk. Karimullah</td>
+													<td><a href="mailto:skkarimullah123@gmail.com">skkarimullah123@gmail.com</a></td>
+													<td><a href="tel:9434623841">9434623841</a></td>
+												</tr>
+												<tr>
+													<td>35</td>
+													<td>Subhash Ch. Kotal</td>
+													<td><a href="mailto:skotal1961@gmail.com">skotal1961@gmail.com</a></td>
+													<td><a href="tel:9733641549">9733641549</a></td>
+												</tr>
+												<tr>
+													<td>36</td>
+													<td>Iia Kuity</td>
+													<td><a href="mailto:"></a></td>
+													<td><a href="tel:3224274465">3224274465</a></td>
+												</tr>
+												<tr>
+													<td>37</td>
+													<td>Nitai Charan Kuity</td>
+													<td><a href="mailto:"></a></td>
+													<td><a href="tel:9332310303">9332310303</a></td>
+												</tr>
+												<tr>
+													<td>38</td>
+													<td>Amartya Maiti , MJF</td>
+													<td><a href="mailto:maitiamartya0@gmail.com">maitiamartya0@gmail.com</a></td>
+													<td><a href="tel:8927479417">8927479417</a></td>
+												</tr>
+												<tr>
+													<td>39</td>
+													<td>Subhra Maiti , MJF </td>
+													<td><a href="mailto:"></a></td>
+													<td><a href="tel:9475328602">9475328602</a></td>
+												</tr>
+												<tr>
+													<td>40</td>
+													<td>Deepjyoti Mallick</td>
+													<td><a href="mailto:malliksamar@gmail.com">malliksamar@gmail.com</a></td>
+													<td><a href="tel:9732581151">9732581151</a></td>
+												</tr>
+												<tr>
+													<td>41</td>
+													<td>Jaya Mallick , MJF</td>
+													<td><a href="mailto:"></a></td>
+													<td><a href="tel:9434012750">9434012750</a></td>
+												</tr>
+												<tr>
+													<td>42</td>
+													<td>Samar Mallik, MJF</td>
+													<td><a href="mailto:malliksamar@gmail.com">malliksamar@gmail.com</a></td>
+													<td><a href="tel:9434012750">9434012750</a></td>
+												</tr>
+												<tr>
+													<td>43</td>
+													<td>Dipanwita Mandal</td>
+													<td><a href="mailto:dipanwita.414@gmail.com">dipanwita.414@gmail.com</a></td>
+													<td><a href="tel:9434160775">9434160775</a></td>
+												</tr>
+												<tr>
+													<td>44</td>
+													<td>Samiran Mandal, MJF</td>
+													<td><a href="mailto:s_mpcc21@rediffmail.com">s_mpcc21@rediffmail.com</a></td>
+													<td><a href="tel:9434160775">9434160775</a></td>
+												</tr>
+												<tr>
+													<td>45</td>
+													<td>Subhra Mandal</td>
+													<td><a href="mailto:s_mpcc21@rediffmail.com">s_mpcc21@rediffmail.com</a></td>
+													<td><a href="tel:9434160775">9434160775</a>, <a href="tel:9735050457">9735050457</a></td>
+												</tr>
+												<tr>
+													<td>46</td>
+													<td>Kanai Lal Manna</td>
+													<td><a href="mailto:lionkmanna1957@gmail.com">lionkmanna1957@gmail.com</a></td>
+													<td><a href="tel:9434104133">9434104133</a></td>
+												</tr>
+												<tr>
+													<td>47</td>
+													<td>Reyaz Mir</td>
+													<td><a href="mailto:mailreyaz1@gmail.com">mailreyaz1@gmail.com</a></td>
+													<td><a href="tel:9163302158">9163302158</a></td>
+												</tr>
+												<tr>
+													<td>48</td>
+													<td>Sasanka Mukherjee</td>
+													<td><a href="mailto:webmukherjee@yahoo.com">webmukherjee@yahoo.com</a></td>
+													<td><a href="tel:9434229827">9434229827</a></td>
+												</tr>
+												<tr>
+													<td>49</td>
+													<td>SK.Mmajaffar, PMJF(VDG 1)</td>
+													<td><a href="mailto:majaffar5star@gmail.com">majaffar5star@gmail.com</a></td>
+													<td><a href="tel:9434025089">9434025089</a></td>
+												</tr>
+												<tr>
+													<td>50</td>
+													<td>Koushik Nanda</td>
+													<td><a href="mailto:sanjita.mimt@gmail.com">sanjita.mimt@gmail.com</a></td>
+													<td><a href="tel:9734216036">9734216036</a></td>
+												</tr>
+												<tr>
+													<td>51</td>
+													<td>Sanjita Nanda</td>
+													<td><a href="mailto:sanjita.mimt@gmail.com">sanjita.mimt@gmail.com</a></td>
+													<td><a href="tel:9641183481">9641183481</a></td>
+												</tr>
+												<tr>
+													<td>52</td>
+													<td>Satwik Paladhi</td>
+													<td><a href="mailto:swaruppaladhi@gmail.com">swaruppaladhi@gmail.com</a></td>
+													<td><a href="tel:"></a></td>
+												</tr>
+												<tr>
+													<td>53</td>
+													<td>Sucheta Paladhi ,MJF</td>
+													<td><a href="mailto:swaruppaladhi@gmail.com">swaruppaladhi@gmail.com</a></td>
+													<td><a href="tel:"></a></td>
+												</tr>
+												<tr>
+													<td>54</td>
+													<td>Shabnam Reyaz</td>
+													<td><a href="mailto:"></a></td>
+													<td><a href="tel:">9163302158</a></td>
+												</tr>
+												<tr>
+													<td>55</td>
+													<td>Jaydeep Samanta, MJF</td>
+													<td><a href="mailto:jaydeep2006j@yahoo.co.in">jaydeep2006j@yahoo.co.in</a></td>
+													<td><a href="tel:9734383882">9734383882</a></td>
+												</tr>
+												<tr>
+													<td>56</td>
+													<td>Sujata Samanta</td>
+													<td><a href="mailto:jaydeep2006j@yahoo.co.in">jaydeep2006j@yahoo.co.in</a></td>
+													<td><a href="tel:9734383882">9734383882</a></td>
+												</tr>
+												<tr>
+													<td>57</td>
+													<td>Jayanta Sarkar, MJF</td>
+													<td><a href="mailto:"></a></td>
+													<td><a href="tel:9830964194">9830964194</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--ABOUT UNIVERSITY END-->
+			 </div>
+		
+		<!--EDU2 FOOTER WRAP START-->
+			 <!--FOOTER START-->
+			 <footer>
+				<!--EDU2 FOOTER CONTANT WRAP START-->
+				<div class="container">
+					<div class="row">
+						<!--EDU2 FOOTER CONTANT DES START-->
+						<div class="col-md-4">
+							<div class="widget widget-links">
+								<h5>About School</h5>
+								<p class="text-justify" style="color:white; padding-right: 57px;">Mother Teresa Lions School is an initiative from the Lions Club Durgachak. The school was established in 2008 and is located in Durgachak under Purba Medinipur district, West Bengal. The school aims to provide quality education to students. </p>
+							 
+							</div>
+							<button class="ft-btn">
+							  <a href="https://www.facebook.com/people/Mother-Teresa-Lions-School/100054322129728/?paipv=0&eav=AfZsQC3dIDDpcq797KcAjTyr9bmLfqt6UC2pium5RdbgoH59imfDM1dnaPF1bBmbFtE&_rdr" target="_blank"
+							  style=" font-weight: 700;font-size: 17px;color: #041e47;font-family: arial;"><span>facebook</span></a>
+							</button>	
+							
+						</div>
+						<!--EDU2 FOOTER CONTANT DES END-->
+		
+						<!--EDU2 FOOTER CONTANT DES START-->
+						<div class="col-md-4">
+							<div class="widget widget-links">
+								<h5>Quick Links</h5>
+								<ul>
+									<li><a href="curriculum.html">Curriculum</a></li>
+									<li><a href="admission-policy.html">Admission Eligibility Criteria</a></li>
+									<li><a href="fees-structure.html">Fees Structure & Scholarship</a></li>
+									<li><a href="event-social.html">Social Event</a></li>
+									<li><a href="health-center.html">Health Center</a></li>
+									<li><a href="water-purifier.html">Clean Drinking Water Distribution</a></li>
+								</ul>
+								
+							</div>
+						</div>
+						<!--EDU2 FOOTER CONTANT DES END-->
+						<!--EDU2 FOOTER CONTANT DES START-->
+						<div class="col-md-4">
+							<div class="widget widget-contact">
+								<h5>Contact</h5>
+								<ul>
+									<li><i class="fa fa-home" style="font-size: 18px;"></i><p style="display: inline;padding-left: 10px;">Durgachak lions club Basudevpur, Durgachak, </p><p style="padding-left: 28px;margin-bottom: 0;">Khanjanchak Haldia, West Bengal 721602</p>
+									</li>
+									<li>
+										<i class="fa fa-phone" style="font-size: 18px;padding-right: 10px;"></i><a href="tel:090023 21611"> 090023 21611</a>
+										<br>
+										<i class="fa fa-phone" style="font-size: 18px;padding-right: 10px;"></i><a href="tel: 81012 98855"> 81012 98855 (president's Phone No)</a>
+									</li>
+								
+									<li><i class="fa fa-envelope-o" style="font-size: 18px;padding-right: 10px;"></i><a href="mailto:motherteresalionsschool@gmail.com">motherteresalionsschool@gmail.com</a></li>
+								</ul>
+							</div>
+							<div class="widget widget-contact" style="padding-top: 16px;">
+								<b style="padding-top:10px;color:white;">Opening Hours</b>
+								<ul>
+									<li><i class="fa fa-clock-o" aria-hidden="true" style="font-size: 21px;padding-right: 11px;"></i>8 am to 1:30 pm (Mon - Friday)</li>
+								</ul>
+		
+							</div>
+						</div>
+						<!--EDU2 FOOTER CONTANT DES END-->
+					</div>
+				</div>
+			</footer>
+			<!--FOOTER END-->
+		<!--COPYRIGHTS START-->
+		<div class="edu2_copyright_wrap">
+			<div class="container">
+				<div class="row">
+					<!-- <div class="col-md-3">
+						<div class="edu2_ft_logo_wrap">
+							<a href="#"><img src="extra-images/ft_logo.png" alt="" /></a>
+						</div>
+					</div> -->
+
+					<div class="col-md-12">
+						<div class="copyright_des">
+							<span>&copy; All Rights reserved. Powered By <a href="https://sysbean.com/" target="_blank">Sysbean</a></span>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<!-- <ul class="cards_wrap">
+							<li><a href="#"><img src="extra-images/visacard.png" alt="" /></a></li>
+							<li><a href="#"><img src="extra-images/mastercard.png" alt="" /></a></li>
+							<li><a href="#"><img src="extra-images/americancard.png" alt="" /></a></li>
+							<li><a href="#"><img src="extra-images/card.png" alt="" /></a></li>
+							<li><a href="#"><img src="extra-images/descoverycard.png" alt="" /></a></li>
+						</ul> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--COPYRIGHTS START-->
+	</div>
+	<!--KF KODE WRAPPER WRAP END-->
+	<!--Bootstrap core JavaScript-->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--Bx-Slider JavaScript-->
+	<script src="js/jquery.bxslider.min.js"></script>
+	<!--Owl Carousel JavaScript-->
+	<script src="js/owl.carousel.min.js"></script>
+	<!--Pretty Photo JavaScript-->
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<!--Full Calender JavaScript-->
+	<script src="js/moment.min.js"></script>
+	<script src="js/fullcalendar.min.js"></script>
+	<script src="js/jquery.downCount.js"></script>
+	<!--Image Filterable JavaScript-->
+	<script src="js/jquery-filterable.js"></script>
+	<!--Accordian JavaScript-->
+	<script src="js/jquery.accordion.js"></script>
+	<!--Number Count (Waypoints) JavaScript-->
+	<script src="js/waypoints-min.js"></script>
+	<!--v ticker-->
+	<script src="js/jquery.vticker.min.js"></script>
+	<!--select menu-->
+	<script src="js/jquery.selectric.min.js"></script>
+	<!--Side Menu-->
+	<script src="js/jquery.sidr.min.js"></script>
+	<!--Custom JavaScript-->
+	<script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
