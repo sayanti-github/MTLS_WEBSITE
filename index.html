@@ -106,6 +106,69 @@
 	}
  }		
 
+ .kode_wrapper{
+	position: relative;
+ }
+
+
+ *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}  
+
+  .popup{
+	height: 1100px;
+	background-color: transparent;
+    width: 450px;
+    /* padding: 30px 40px; */
+    position: relative;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+	z-index: 999;
+}
+
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+
+
+
+/* a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0f72e5;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+} */
+ 
+
+
+
+
 	</style>
 </head>
 
@@ -518,7 +581,7 @@
 			<!--kode navigation end-->
 			   </header>
 
-
+			   
 		<div class="edu2_main_bn_wrap">
 			<div id="owl-demo-main" class="owl-carousel owl-theme">
 				<div class="item">
@@ -542,6 +605,25 @@
 
 			</div>
 			  <!-- <video autoplay loop muted src="video/banner.mp4"></video> -->
+			  <div class="popup">
+				<button id="close">&times;</button>
+				<img class="popimg" src="admission-notice.jpg" alt="">
+			</div>
+			<script>
+				window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        3000
+    )
+});
+
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+			</script>
 		</div> 
 		<!-- <video autoplay loop muted src="video/banner.mp4"></video> -->
 		<div class="kf_content_wrap">
@@ -622,6 +704,20 @@
 							<div class="kf_edu2_heading1">
 								<h3 style="color:black;">Notice Board</h3>
 							</div>
+							<!-- <div class="widget widget-recent-posts">
+								<ul class="sidebar_rpost_des">
+							
+									<li>
+										<div class="kode-text">
+											<h6>
+												<a href="files/admission-notice.pdf" target="_blank">School will remain closed on 09.05.2023 for classes L.N to K.G</a>
+											</h6>
+											<span><i class="fa fa-clock-o" style="padding-right: 8px;"></i>8 th May, 2023</span>
+										</div>
+									</li>
+
+									</ul>
+							</div> -->
 							<div class="AutoScroll scroller" style="max-height: 301px;"
 							id="id" data-config='{"delay" : 2000 , "amount" : 50}'>
 							<div class="widget widget-recent-posts">
@@ -631,13 +727,26 @@
 										<div class="kode-text">
 											<h6>
 												<img src="images/new2.gif" alt="" width="16%;">
+												<a href="files/admission-notice.pdf" target="_blank">Admission notice</a>
+											</h6>
+											<span><i class="fa fa-clock-o" style="padding-right: 8px;"></i>6 th Dec, 2023</span>
+										</div>
+									</li>
+
+								</ul>
+							</div>
+							
+							<div class="widget widget-recent-posts">
+								<ul class="sidebar_rpost_des">
+									<li>
+										<div class="kode-text">
+											<h6>
 												<a href="event.html" target="_blank">Rabindra Jayanti Celebration</a>
 											</h6>
 											<span><i class="fa fa-clock-o" style="padding-right: 8px;"></i>9 th May, 2023</span>
 										</div>
 									</li>
-
-									</ul>
+								</ul>
 							</div>
 							<div class="widget widget-recent-posts">
 								<ul class="sidebar_rpost_des">
