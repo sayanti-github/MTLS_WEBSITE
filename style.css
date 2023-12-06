@@ -915,7 +915,7 @@ section,
 	text-transform: uppercase;
 	color: #fff;
 	margin-bottom: 13px;
-
+    font-size: 38px;
 }
 .edu2_main_bn_wrap figcaption p{
 	color: #fff;
@@ -940,6 +940,7 @@ section,
     right: 0;
     text-align: center;
     z-index: 2222;
+	display: none;
 }
 .edu2_main_bn_wrap .customNavigation {
     bottom: 0%;
