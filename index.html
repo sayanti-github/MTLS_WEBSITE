@@ -104,14 +104,103 @@
     margin-bottom: 0;
     padding-bottom: 0;
 	}
+	#pop-up {
+    text-align: right;
+    width: 339px;
+    /* height: 300px; */
+    background: rgb(10, 1, 132);
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 88;
+}	
+
  }		
+ #pop-up{
+    text-align: right;
+    /* width: 400px; */
+    /* height: 300px; */
+    background: rgb(10, 1, 132);
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 88;
+}
+#main{
+	width: 100%;
+    height: 100%;
+    background: #00000085;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* display: none; */
+    /* z-index: 52; */
+}
+
 
 	</style>
 </head>
 
 <body>
+	<div id="main">
+	<div id="pop-up">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav2()" style="font-size: 49px;
+		color: white;
+		font-weight: 800;">×</a>
+		<img src="images/new-admission.jpg" alt="">
+	  </div>
+	  </div>
+	  <script>
+		$(document).ready(function(){
+
+var stopAutohide;
+
+function showWindow(){
+  $('#main').show();
+  // stop scroll
+  $('html body').css('overflow','hidden');
+  // auto hide fter 5s
+  stopAutohide = setTimeout(hideWindow,5000);
+
+}
+//showWindow()
+
+function hideWindow(){
+  $('#main').hide();
+  // on scroll
+  $('html body').css('overflow','scroll');
+}
+//hideWindow()
+
+// now call function automatically after some time 
+
+
+// auto open after 2s
+setTimeout(showWindow,2000);
+
+// close after click 
+
+$("#close-btn").click(function(){
+
+  hideWindow();
+  celarTimeout(stopAutohide);
+
+})
+
+
+})
+	  </script>
+	</div>
 	<!--KF KODE WRAPPER WRAP START-->
 	<div class="kode_wrapper">
+
+	</div>
 		<!-- register Modal -->
 		<div class="modal fade" id="reg-box" tabindex="-1" role="dialog">
 			<div class="modal-dialog">
@@ -397,6 +486,9 @@
 					function closeNav() {
 					  document.getElementById("mySidepanel").style.width = "0";
 					}
+					function closeNav2() {
+					  document.getElementById("pop-up").style.display = "none";
+					}
 					</script>
 				<script>
 					var coll = document.getElementsByClassName("collapsible");
@@ -623,7 +715,7 @@
 								<h3 style="color:black;">Notice Board</h3>
 							</div>
 							<div class="AutoScroll scroller" style="max-height: 301px;"
-							id="id" data-config='{"delay" : 2000 , "amount" : 50}'>
+							id="id" data-config='{"delay" : 4000 , "amount" : 50}'>
 							<div class="widget widget-recent-posts">
 								<ul class="sidebar_rpost_des">
 							
@@ -631,6 +723,21 @@
 										<div class="kode-text">
 											<h6>
 												<img src="images/new2.gif" alt="" width="16%;">
+												<a href="files/admission-notice.pdf" target="_blank">Admission 2024-2025</a>
+											</h6>
+											<span><i class="fa fa-clock-o" style="padding-right: 8px;"></i>6 th Dec, 2023</span>
+										</div>
+									</li>
+
+									</ul>
+							</div>
+							<div class="widget widget-recent-posts">
+								<ul class="sidebar_rpost_des">
+							
+									<li>
+										<div class="kode-text">
+											<h6>
+												<!-- <img src="images/new2.gif" alt="" width="16%;"> -->
 												<a href="event.html" target="_blank">Rabindra Jayanti Celebration</a>
 											</h6>
 											<span><i class="fa fa-clock-o" style="padding-right: 8px;"></i>9 th May, 2023</span>
@@ -1196,6 +1303,7 @@
 		function formSubmitConfirmation() {
 	 return alert("Your message is succesfully sent");
    }
+
    </script>	   
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
